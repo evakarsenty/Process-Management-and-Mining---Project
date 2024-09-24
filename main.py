@@ -236,16 +236,10 @@ def calculate_lg(zeta_specie_count, g):
 
 
 if __name__ == "__main__":
-    # file_path_BPI_2012 = "C:/Users/bijao/PycharmProjects/Process_Mining_Project/BPI_Challenge_2012.xes"
-    file_path_sepsis = "Sepsis Cases - Event Log.xes"
-
-    # xes_file_BPI_2012 = load_data(file_path_BPI_2012)
+    file_path_sepsis = " Path to the file: Sepsis Cases - Event Log.xes"
     xes_file_sepsis = load_data(file_path_sepsis)
-
-    # event_log_BPI_2012 = xes_to_df(xes_file_BPI_2012)
     event_log_sepsis = xes_to_df(xes_file_sepsis)
 
-    # print_num_cases_and_num_trace_variants(event_log_BPI_2012, "BPI 2012")
     print_num_cases_and_num_trace_variants(event_log_sepsis, "Sepsis Cases")
 
     species_functions = [zeta_act, zeta_df, zeta_tv, zeta_t1, zeta_t5, zeta_t30, zeta_te2]
